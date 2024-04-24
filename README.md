@@ -1,17 +1,31 @@
-## 1 - entrada - json com uma máquina de turing cujo alfabeto é apenas 0 e 1
-## 2 - Codificação  
-Símbolo codificação
-0            1
-1            11
-B            111
-q0           1
-q1           11
+# Conversor de Máquina de Turing para Máquina de Turing Universal
 
-L            1
-R            11
+Este é um projeto para converter uma Máquina de Turing (MT) em uma Máquina de Turing Universal (MTU). Uma MTU é uma Máquina de Turing especializada que é capaz de simular o comportamento de qualquer outra Máquina de Turing. Ela tem a capacidade de interpretar descrições de outras MTs e executar seus comportamentos.
 
-## 3 - Mapeamento das funções de transição (normal)
-## 4 - encode - mapear as funções em 0 e 1 (chave-valor)
+## Passos do Projeto
 
-lista de transição - chave -> valor estado (q) -> (1,2,3, .., n)
-obs -> ajustar ultimos dois zeros
+### 1. Entrada
+
+O projeto aceita como entrada um arquivo JSON descrevendo uma Máquina de Turing. O alfabeto da Máquina de Turing é restrito aos símbolos "0" e "1".
+
+### 2. Codificação
+
+Antes de converter a MT para uma MTU, os símbolos da MT precisam ser codificados. Utilizamos a seguinte codificação:
+
+| Símbolo MT  | Codificação MTU |
+|-------------|-----------------|
+| 0           | 1               |
+| 1           | 11              |
+| B           | 111             |
+| L           | 1               |
+| R           | 11              |
+
+### 3. Mapeamento das Funções de Transição
+
+O projeto mapeia as funções de transição da Máquina de Turing normal.
+
+### 4. Encode
+
+As funções de transição são então convertidas em uma representação binária utilizando a codificação descrita acima (encoded)
+
+## 5. Próximos passos ainda a serem definidos. 
