@@ -1,0 +1,13 @@
+{
+    "alfabeto": ["0", "1"],
+    "estados": ["q0", "q1", "q2"],
+    "estadoInicial": "q0",
+    "estadosFinais": ["q2"],
+    "transicoes": [
+      {"estadoAtual": "q0", "simboloAtual": "0", "novoSimbolo": "1", "novoEstado": "q1", "direcao": "R"},
+      {"estadoAtual": "q0", "simboloAtual": "1", "novoSimbolo": "0", "novoEstado": "q1", "direcao": "R"},
+      {"estadoAtual": "q1", "simboloAtual": "0", "novoSimbolo": "0", "novoEstado": "q1", "direcao": "R"},
+      {"estadoAtual": "q1", "simboloAtual": "1", "novoSimbolo": "1", "novoEstado": "q1", "direcao": "R"},
+      {"estadoAtual": "q1", "simboloAtual": "B", "novoSimbolo": "B", "novoEstado": "q2", "direcao": "L"}
+    ]
+  }
