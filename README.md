@@ -28,4 +28,30 @@ O projeto mapeia as funções de transição da Máquina de Turing normal.
 
 As funções de transição são então convertidas em uma representação binária utilizando a codificação descrita acima (encoded)
 
-## 5. Próximos passos ainda a serem definidos. 
+## 5. Próximos passos 
+
+## Inicialização das Fitas:
+- A fita 1 inicia com a entrada que representa a codificação da Máquina de Turing 𝑀 e a cadeia 𝑤 a ser processada por 𝑀.
+- A fita 2 é utilizada para representar o estado atual de 𝑀.
+- A fita 3 é utilizada para simular a computação de 𝑀.
+
+## Conversão e Escrita Inicial:
+- Verifique se a entrada na fita 1 está na forma correta (𝑅(𝑀)𝑤). Se não estiver, a máquina deve se mover para a direita indefinidamente (indicando rejeição).
+- Copie a cadeia 𝑤 para o início da fita 3 e retorne a cabeça da fita 3 para o início.
+- Escreva o estado inicial 𝑞₀ (codificado como "1") na fita 2.
+
+## Simulação das Transições:
+- Leia o símbolo atual na fita 3 e o estado atual na fita 2.
+- Procure na fita 1 por uma transição correspondente.
+- Se a transição for encontrada:
+Atualize o estado na fita 2.
+Escreva o novo símbolo na fita 3.
+Mova a cabeça da fita 3 conforme especificado pela transição (L ou R).
+- Repita o processo até que a entrada seja aceita ou rejeitada.
+
+
+
+
+
+
+
