@@ -114,9 +114,7 @@ def executar_maquina(fita1, fita2, fita3, cabeca_maquina):
 
         fita2, fita3, cabeca_maquina = executar_transicao(fita2, fita3, cabeca_maquina, ultima_transicao)
         resultado, ultima_transicao = buscar_transicao(fita2, fita3, cabeca_maquina, fita1)
-        if resultado is False:
-            print(REJEITA)
-            return
+        
 
     print(ACEITA)
 
