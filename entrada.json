@@ -16,5 +16,5 @@
       {"estadoAtual": "q3", "simboloAtual": "1", "novoSimbolo": "1", "novoEstado": "q3", "direcao": "L"},
       {"estadoAtual": "q3", "simboloAtual": "B", "novoSimbolo": "B", "novoEstado": "q3", "direcao": "L"}
   ],
-  "entrada": "1101"
+  "entrada": "1011101"
 }
